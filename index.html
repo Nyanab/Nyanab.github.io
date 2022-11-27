@@ -1,148 +1,325 @@
 <!-- made by keisha nabila anindya for personal purpose and others -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Nabila's Portofolio </title>
-        <link rel="stylesheet" href="style.css"></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="description" content="Portofolio Nabila">
-        <meta name="keywords" content="Portofolio Nabila">
-        <meta name="author" content="Keisha Nabila Anindya">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="b1" class="header">
-            <div id="author" class="header">
-                <img src="author.png">
-            </div>
-            <div id="navbar" class="header header-navbar">
-                <span id="nav1" class="header header-navbar" onclick="wushAbout()"> About </span>
-                <span id="nav2" class="header header-navbar" onclick="wushSkill()"> Skills </span>
-                <span id="nav3" class="header header-navbar" onclick="wushEdu()"> Edu </span>
-                <span id="nav5" class="header header-navbar" onclick="wushProject()"> Projects </span>
-                <span id="nav7" class="header header-navbar" onclick="wushContacts()"> Contacts </span>
-            </div>
+
+<head>
+  <title> Nabila's Portofolio </title>
+  <link rel="stylesheet" href="style.css">
+  </link>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="description" content="Portofolio Nabila">
+  <meta name="keywords" content="Portofolio Nabila">
+  <meta name="author" content="Keisha Nabila Anindya">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="b1" class="header">
+    <div id="author" class="header">
+      <img src="author.png">
+    </div>
+    <div id="navbar" class="header header-navbar">
+      <span id="nav1" class="header header-navbar" onclick="wushAbout()"> About </span>
+      <span id="nav2" class="header header-navbar" onclick="wushSkill()"> Skills </span>
+      <span id="nav3" class="header header-navbar" onclick="wushEdu()"> Edu </span>
+      <span id="nav5" class="header header-navbar" onclick="wushProject()"> Projects </span>
+      <span id="nav6" class="header header-navbar" onclick="wushCertificates()"> Certificates </span>
+      <span id="nav7" class="header header-navbar" onclick="wushContacts()"> Contacts </span>
+    </div>
+  </div>
+
+  <div id="b2" class="home">
+    <div id="judul" class="home">
+      <h1 id="judul-nama" class="home">Hello. I'm Nabila</h1>
+      <p id="judul-desc" class="home">Currently a Student Based in Indonesia</p>
+      <button id="explore" class="home" onclick="explore()">Explore!</button>
+    </div>
+    <div id="gambar" class="home">
+      <img src="pfp.png" alt="foto nabila yang cantik" id="pfp" class="home">
+    </div>
+  </div>
+  <div id="space">
+    <br />
+  </div>
+
+  <div id="b3" class="about">
+    <h1 id="about-title" class="about">About me</h1>
+    <p id="about-desc" class="about">My full name is Keisha Nabila Anindya. I’m 14 y.o this years. I am a student who
+      have enthusiastic in technology. I started to learn code at Elementary School with NXT and EV3 program. My
+      interest lead me to learn more about technology from programming, robotic, until data science.
+      <br />
+      <br />
+      I lived with my family. I have alergic to cat furs, but I have a cat named Koko. She is 2 Years Old. My dream is
+      to having a project with the collaboration of many people.
+    </p>
+  </div>
+  <div id="space1">
+    <br />
+  </div>
+
+  <div id="b4" class="skills">
+    <h1 id="skill-title" class="skills"> My Skills </h1>
+    <div id="skills-container" class="skills">
+      <div id="ino-skill" class="skills skills-kind">
+        <img src="ino.png" alt="arduino" id="ino-skill-pic" class="skills skills-pic">
+        <h2 id="ino-skill-title" class="skills skills-title-kind"> Arduino </h2>
+        <p id="ino-decs" class="skills skills-desc"> 3 Year </p>
+      </div>
+      <div id="py-skill" class="skills skills-kind">
+        <img src="py.png" alt="python" id="py-skill-pic" class="skills skills-pic">
+        <h2 id="py-skill-title" class="skills skills-title-kind"> Python </h2>
+        <p id="py-decs" class="skills skills-desc"> 3 Year </p>
+      </div>
+      <div id="ds-skill" class="skills skills-kind">
+        <img src="ds.png" alt="data science" id="ds-skill-pic" class="skills skills-pic">
+        <h2 id="ds-skill-title" class="skills skills-title-kind"> Data Science </h2>
+        <p id="ds-decs" class="skills skills-desc"> Beginner </p>
+      </div>
+    </div>
+  </div>
+  <div id="space2">
+    <br />
+  </div>
+
+  <div id="b5" class="edu">
+    <h1 id="edu-title" class="edu"> Education </h1>
+    <div id="formal-title-container" class="edu">
+      <div id="formal-es" class="edu edu-formal edu-formal-es">
+        <p id="formal-es-title" class="edu edu-formal edu-formal-es">SDIP Nurul Fajar</p>
+        <p id="formal-es-desc" class="edu edu-formal edu-formal-es">Elementary School</p>
+        <p id="formal-es-year" class="edu edu-formal edu-formal-es">2013-2019</p>
+      </div>
+      <img src="lineEdu.png" id="formal-line" class="edu">
+      <div id="formal-jhs" class="edu edu-formal edu-formal-jhs">
+        <p id="formal-jhs-title" class="edu edu-formal edu-formal-jhs">SMPN 3 Cibinong</p>
+        <p id="formal-jhs-desc" class="edu edu-formal edu-formal-jhs">Junior High School</p>
+        <p id="formal-jhs-year" class="edu edu-formal edu-formal-jhs">2019-Now</p>
+      </div>
+    </div>
+  </div>
+  <div id="space3">
+    <br />
+  </div>
+  <div id="space4">
+    <br />
+  </div>
+
+  <div id="b7" class="projects">
+    <h1 id="project-title" class="projects"> Projects </h1>
+    <div id="project1" class="projects">
+      <div id="project1-top" class="projects">
+        <div id="project-pic" class="projects">
+          <img src="project1.png" id=project1-pic>
         </div>
-        <div id="b2" class="home">
-            <div id="judul" class="home">
-                <h1 id="judul-nama" class="home">Hello. I'm Nabila</h1>
-                <p id="judul-desc" class="home">Currently a Student Based in Indonesia</p>
-                <button id="explore" class="home" onclick="wushAbout()">Explore!</button>
-            </div>
-            <div id="gambar" class="home">
-                <img src="pfp.png" alt="foto nabila yang cantik" id="pfp" class="home">
-            </div>
+        <div id="project-tag">
+          <p id="project1-tag" class="project project-tag"> Open Source </p>
+          <p id="project1-tag2" class="projects project-tag"> In Development </p>
+          <p id="project1-tag3" class="projects project-tag"> Improve Open </p>
+          <p id="project1-tag4" class="projects project-tag"><a
+              href="https://replit.com/@nyanab/MultifunctionCalendar20"> ✈️Repl.it→</a></p>
         </div>
-        <div id="space">
-            <br/>
+      </div>
+      <h1 id="project1-title" class="projects">Multifunction Calendar</h1>
+      <p id="project1-desc" class="projects">A simple calendar program with many function. Besides the facilty of python
+        calendar and datetime library, this project using complex algorithm that i made for birthday countdown.</p>
+    </div>
+    <p id="projects-more" class="projects hiatus" onclick="hiatus()"> More Projects...</p>
+  </div>
+  <div id="space5">
+    <br />
+    <br />
+    <br />
+    <p></p>
+  </div>
+
+  <div id="b8" class="certificates">
+    <h1 id="certi-title" class="certificates"> Certificates </h1>
+    <div id="certi1" class="certificates certi1">
+      <div id="certi1-top" class="certificates certi1-top">
+        <div id="certi1-pic" class="certificates certi1-pic">
+          <img src="certif1.jpg" id="certif1-pic" class="certificates certif1-pic"
+            onClick="window.open('certif1.jpg','Image');">
         </div>
-        <div id="b3" class="about">
-            <h1 id="about-title" class="about">About me</h1>
-            <p id="about-desc" class="about">My full name is Keisha Nabila Anindya. I’m 14 y.o this years. I am a student who have enthusiastic in technology. I started to learn code at Elementary School with NXT and EV3 program. My interest lead me to learn more about technology from programming, robotic, until data science.
-            <br/>
-            <br/>
-            I lived with my family. I have alergic to cat furs, but I have a cat named Koko. She is 2 Years Old. My dream is to having a project with the collaboration of many people.</p>
+        <div id="certi1-tag">
+          <p id="certi1-tag" class="certificates certi-tag"> Date: 21/4/2019 </p>
+          <p id="certi1-tag2" class="certificates certi-tag"> Host: Roboratory </p>
+          <p id="certi1-tag3" class="certificates certi-tag certi-tags"><a href="https://fp.nyanab.repl.co/certif1.jpg"
+              target="_blank">
+              📷Certificate→ </a></p>
+          <p id="certi1-tag4" class="certificates certi-tag certi-tags"><a
+              href="https://replit.com/@nyanab/MultifunctionCalendar20"> 📷Activity→</a></p>
         </div>
-        <div id="space1">
-            <br/>
+      </div>
+      <h1 id="certi1-title" class="certificates certi1-title">2nd winner on Basic Mechanic Fast Building "Jembatan
+        Ampera" RACE 2019
+      </h1>
+      <p id="certi1-desc" class="certificates certi1-desc">My first silver medal and winning on a competition at robotic.</p>
+    </div>
+    <br />
+    <br />
+    <div id="certi2" class="certificates certi1">
+      <div id="certi2-top" class="certificates certi1-top">
+        <div id="certi2-pic" class="certificates certi1-pic">
+          <img src="certif2.jpg" id="certif2-pic" class="certificates certif1-pic"
+            onClick="window.open('certif2.jpg','Image');">
         </div>
-        <div id="b4" class="skills">
-            <h1 id="skill-title" class="skills"> My Skills </h1>
-            <div id="skills-container" class="skills">
-                <div id="ino-skill" class="skills skills-kind">
-                    <img src="ino.png" alt="arduino" id="ino-skill-pic" class="skills skills-pic">
-                    <h2 id="ino-skill-title" class="skills skills-title-kind"> Arduino </h2>
-                    <p id="ino-decs" class="skills skills-desc"> 3 Year </p>
-                </div>
-                <div id="py-skill" class="skills skills-kind">
-                    <img src="py.png" alt="python" id="py-skill-pic" class="skills skills-pic">
-                    <h2 id="py-skill-title" class="skills skills-title-kind"> Python </h2>
-                    <p id="py-decs" class="skills skills-desc"> 3 Year </p>
-                </div>
-                <div id="ds-skill" class="skills skills-kind">
-                    <img src="ds.png" alt="data science" id="ds-skill-pic" class="skills skills-pic">
-                    <h2 id="ds-skill-title" class="skills skills-title-kind"> Data Science </h2>
-                    <p id="ds-decs" class="skills skills-desc"> Beginner </p>
-                </div>
-            </div>
+        <div id="certi2-tag">
+          <p id="certi2-tag" class="certificates certi-tag"> Date: 15/12/2019 </p>
+          <p id="certi2-tag2" class="certificates certi-tag"> Host: Roboratory </p>
+          <p id="certi2-tag3" class="certificates certi-tag certi-tags"><a href="https://fp.nyanab.repl.co/certif2.jpg"
+              target="_blank">
+              📷Certificate→ </a></p>
+          <p id="certi2-tag4" class="certificates certi-tag certi-tags"><a
+              href="https://replit.com/@nyanab/MultifunctionCalendar20"> 📷Activity→</a></p>
         </div>
-        <div id="space2">
-            <br/>
+      </div>
+      <h1 id="certi2-title" class="certificates certi1-title">2nd winner on Basic Robot Programming Bogor Robotic Competition 2019
+      </h1>
+      <p id="certi2-desc" class="certificates certi1-desc">My second winning on a competition at robotic.</p>
+    </div>
+    <br />
+    <br />
+    <div id="certi3" class="certificates certi1">
+      <div id="certi3-top" class="certificates certi1-top">
+        <div id="certi3-pic" class="certificates certi1-pic">
+          <img src="certif3.jpg" id="certif3-pic" class="certificates certif1-pic"
+            onClick="window.open('certif3alt.jpg','Image');">
         </div>
-        <div id="b5" class="edu">
-            <h1 id="edu-title" class="edu"> Education </h1>
-            <div id="formal-title-container" class="edu">
-                <div id="formal-es" class="edu edu-formal edu-formal-es">
-                    <p id="formal-es-title" class="edu edu-formal edu-formal-es">SDIP Nurul Fajar</p>
-                    <p id="formal-es-desc" class="edu edu-formal edu-formal-es">Elementary School</p>
-                    <p id="formal-es-year" class="edu edu-formal edu-formal-es">2013-2019</p>
-                </div>
-                <img src="lineEdu.png" id="formal-line" class="edu">
-                <div id="formal-jhs" class="edu edu-formal edu-formal-jhs">
-                    <p id="formal-jhs-title" class="edu edu-formal edu-formal-jhs">SMPN 3 Cibinong</p>
-                    <p id="formal-jhs-desc" class="edu edu-formal edu-formal-jhs">Junior High School</p>
-                    <p id="formal-jhs-year" class="edu edu-formal edu-formal-jhs">2019-Now</p>
-                </div>
-            </div>
+        <div id="certi3-tag">
+          <p id="certi3-tag" class="certificates certi-tag"> Date: 21/8/2022 </p>
+          <p id="certi3-tag2" class="certificates certi-tag"> Host: WRO </p>
+          <p id="certi3-tag3" class="certificates certi-tag certi-tags"><a href="https://fp.nyanab.repl.co/certif3alt.jpg"
+              target="_blank">
+              📷Certificate→ </a></p>
+          <p id="certi3-tag4" class="certificates certi-tag certi-tags"><a
+              href="https://replit.com/@nyanab/MultifunctionCalendar20"> 📷Activity→</a></p>
         </div>
-        <div id="space3">
-            <br/>
+      </div>
+      <h1 id="certi3-title" class="certificates certi1-title">6th place on Junior Robomission World Robot Olympiad Indonesia 2022
+      </h1>
+      <p id="certi3-desc" class="certificates certi1-desc">My third winning on a competition at robotic.</p>
+    </div>
+    <br />
+    <br />
+    <div id="certi4" class="certificates certi1">
+      <div id="certi4-top" class="certificates certi1-top">
+        <div id="certi4-pic" class="certificates certi1-pic">
+          <img src="certif4.jpg" id="certif4-pic" class="certificates certif1-pic"
+            onClick="window.open('certif4.jpg','Image');">
         </div>
-        <div id="space4">
-            <br/>
+        <div id="certi4-tag">
+          <p id="certi4-tag" class="certificates certi-tag"> Date: 15/5/2022 </p>
+          <p id="certi4-tag2" class="certificates certi-tag"> Host: Prestige </p>
+          <p id="certi4-tag3" class="certificates certi-tag certi-tags"><a href="https://fp.nyanab.repl.co/certif4.jpg"
+              target="_blank">
+              📷Certificate→ </a></p>
+          <p id="certi4-tag4" class="certificates certi-tag certi-tags"><a
+              href="https://replit.com/@nyanab/MultifunctionCalendar20"> 📷Activity→</a></p>
         </div>
-        <div id="b7" class="projects">
-            <h1 id="project-title" class="projects"> Projects </h1>
-            <div id="project1" class="projects">
-              <div id="project1-top" class="projects">
-                <div id="project-pic" class="projects">
-                  <img src="project1.png" id=project1-pic>
-                </div>
-                <div id="project-tag">
-                <p id="project1-tag" class="project project-tag"> Open Source </p>
-                <p id="project1-tag2" class="projects project-tag"> In Development </p>
-                <p id="project1-tag3" class="projects project-tag"> Improve Open </p>
-                <p id="project1-tag4" class="projects project-tag"><a href="https://replit.com/@nyanab/MultifunctionCalendar20"> ✈️Repl.it→</a></p>
-                </div>
-              </div>
-              <h1 id="project1-title" class="projects">Multifunction Calendar</h1>
-              <p id="project1-desc" class="projects">A simple calendar program with many function. Besides the facilty of python calendar and datetime library, this project using complex algorithm that i made for birthday countdown.</p>
-            </div>
-            <p id="projects-more" class="projects hiatus" onclick="hiatus()"> More Projects...</p>
+      </div>
+      <h1 id="certi4-title" class="certificates certi1-title">Gold Medal Winner in Technology field at National Level OSPN 2022 Event
+      </h1>
+      <p id="certi4-desc" class="certificates certi1-desc">I'm on 13th place at the national level! My first gold medal.</p>
+    </div>
+    <br />
+    <br />
+    <div id="certi5" class="certificates certi1">
+      <div id="certi5-top" class="certificates certi1-top">
+        <div id="certi5-pic" class="certificates certi1-pic">
+          <img src="certif5.jpg" id="certif5-pic" class="certificates certif1-pic"
+            onClick="window.open('certif5.jpg','Image');">
         </div>
-        <div id="space6">
-            <br/>
+        <div id="certi5-tag">
+          <p id="certi5-tag" class="certificates certi-tag"> Date: 15/5/2022 </p>
+          <p id="certi5-tag2" class="certificates certi-tag"> Host: Prestige </p>
+          <p id="certi5-tag3" class="certificates certi-tag certi-tags"><a href="https://fp.nyanab.repl.co/certif5.jpg"
+              target="_blank">
+              📷Certificate→ </a></p>
+          <p id="certi5-tag4" class="certificates certi-tag certi-tags"><a
+              href="https://replit.com/@nyanab/MultifunctionCalendar20"> 📷Activity→</a></p>
         </div>
-        <div id="b9" class="contacts">
-          <div id=contact-container>
-            <h1 id="contact-title" class="contacts"> Contacts </h1>
-            <p id="contact-desc" class="contacts"> Let's get connected! </p>
-          </div>
-          <div id="contact-object">
-            <div id="location" class="contacts">
-                <img src="location.png" id="loc-pic" class="contacts contacts-pic"></img>
-                <span id="loc-desc" class="contacts contacts-desc"> Bogor, West Java</span>
-            </div>
-            <div id="phone" class="contacts">
-                <img src="phone.png" id="phone-vector" class="contacts contacts-pic"></img>
-                <a href="tel:+62-822-2185-2008" id="phone-desc" class="contacts contacts-desc"> Phone </a>
-            </div>
-            <div id="gmail" class="contacts">
-                <img src="gmail.png" id="gmail-pic" class="contacts contacts-pic"></img>
-                <a href="mailto:keishanabila08@gmail.com" id="gmail-desc" class="contacts contacts-desc"> Gmail </a>
-            </div>
-            <div id="github" class="contacts">
-                <img src="github.png" id="github-pic" class="contacts contacts-pic"></img>
-                <a href="https://github.com/Nyanab" id="github-desc" class="contacts contacts-desc"> Github </a>
-            </div>
-          </div>
+      </div>
+      <h1 id="certi5-title" class="certificates certi1-title">Silver Medal Winner in Science field at National Level OSPN 2022 Event
+      </h1>
+      <p id="certi5-desc" class="certificates certi1-desc">My second silver medal.</p>
+    </div>
+    <br />
+    <br />
+    <div id="certi6" class="certificates certi1">
+      <div id="certi6-top" class="certificates certi1-top">
+        <div id="certi6-pic" class="certificates certi1-pic">
+          <img src="certif6.jpg" id="certif6-pic" class="certificates certif1-pic"
+            onClick="window.open('certif6alt.jpg','Image');">
         </div>
-        <div id="copyright" class="credit">
-            <p id="copyright-desc" class="credit"> Made with ❤️ | © 2022 by Nabila </p>
+        <div id="certi6-tag">
+          <p id="certi6-tag" class="certificates certi-tag"> Date: 15/5/2022 </p>
+          <p id="certi6-tag2" class="certificates certi-tag"> Host: Prestige </p>
+          <p id="certi6-tag3" class="certificates certi-tag certi-tags"><a href="https://fp.nyanab.repl.co/certif6alt.jpg"
+              target="_blank">
+              📷Certificate→ </a></p>
+          <p id="certi6-tag4" class="certificates certi-tag certi-tags"><a
+              href="https://replit.com/@nyanab/MultifunctionCalendar20"> 📷Activity→</a></p>
         </div>
-        <script src="main.js"></script>
-    </body>
+      </div>
+      <h1 id="certi6-title" class="certificates certi1-title">Silver Medal Winner in English field at National Level OSI-H 2022 Event
+      </h1>
+      <p id="certi6-desc" class="certificates certi1-desc">My third silver medal.</p>
+    </div>
+
+    <p id="certi-more" class="certificates hiatus" onclick="hiatus()"> Click here to download PDF file for certificates</p>
+  </div>
+
+  <div id="space6">
+    <br />
+  </div>
+  <div id="b9" class="contacts">
+    <div id="contact-container">
+      <h1 id="contact-title" class="contacts"> Contacts </h1>
+      <p id="contact-desc" class="contacts"> Let's get connected! </p>
+    </div>
+    <div id="contact-object">
+      <div id="location" class="contacts">
+        <img src="location.png" id="loc-pic" class="contacts contacts-pic"></img>
+        <span id="loc-desc" class="contacts contacts-desc"> Bogor, West Java</span>
+      </div>
+      <div id="phone" class="contacts">
+        <img src="phone.png" id="phone-vector" class="contacts contacts-pic"></img>
+        <a href="tel:+62-822-2185-2008" id="phone-desc" class="contacts contacts-desc"> Phone </a>
+      </div>
+      <div id="gmail" class="contacts">
+        <img src="gmail.png" id="gmail-pic" class="contacts contacts-pic"></img>
+        <a href="mailto:keishanabilaa13@gmail.com" id="gmail-desc" class="contacts contacts-desc"> Gmail </a>
+      </div>
+      <div id="github" class="contacts">
+        <img src="github.png" id="github-pic" class="contacts contacts-pic"></img>
+        <a href="https://github.com/Nyanab" id="github-desc" class="contacts contacts-desc"> Github </a>
+      </div>
+      <div id="discord" class="contacts">
+        <br />
+        <img src="discord.png" id="discord-pic" class="contacts contacts-pic"></img>
+        <a href="https://discordapp.com/users/657558500087562240" id="discord-desc" class="contacts contacts-desc">
+          Discord </a>
+      </div>
+      <div id="instagram" class="contacts">
+        <br />
+        <img src="instagram.png" id="instagram-pic" class="contacts contacts-pic"></img>
+        <a href="https://instagram.com/nab.py" id="instagram-desc" class="contacts contacts-desc"> Instagram </a>
+      </div>
+      <div id="telegram" class="contacts">
+        <br />
+        <img src="telegram.png" id="telegram-pic" class="contacts contacts-pic"></img>
+        <a href="https://t.me/Hakunneko" id="telegram-desc" class="contacts contacts-desc"> Telegram </a>
+      </div>
+    </div>
+  </div>
+  <div id="copyright" class="credit">
+    <p id="copyright-desc" class="credit"> Made with ❤️ | © 2022 by Nabila </p>
+  </div>
+  <script src="main.js"></script>
+</body>
 </html>
