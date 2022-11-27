@@ -34,6 +34,7 @@ body{
     text-decoration: underline;
     text-decoration-color: #D1EDFE;
     text-decoration-thickness: 4px;
+  transition: 0.5s 
 }
 #nav2:hover{
     color:black;
@@ -41,6 +42,7 @@ body{
     text-decoration: underline;
     text-decoration-color: #D1EDFE;
     text-decoration-thickness: 4px;
+  transition: 0.5s 
 }
 #nav3:hover{
     color:black;
@@ -48,6 +50,7 @@ body{
     text-decoration: underline;
     text-decoration-color: #D1EDFE;
     text-decoration-thickness: 4px;
+  transition: 0.5s 
 }
 #nav4:hover{
     color:black;
@@ -55,6 +58,7 @@ body{
     text-decoration: underline;
     text-decoration-color: #D1EDFE;
     text-decoration-thickness: 4px;
+  transition: 0.5s 
 }
 #nav5:hover{
     color:black;
@@ -62,6 +66,7 @@ body{
     text-decoration: underline;
     text-decoration-color: #D1EDFE;
     text-decoration-thickness: 4px;
+  transition: 0.5s 
 }
 #nav6:hover{
     color:black;
@@ -69,6 +74,7 @@ body{
     text-decoration: underline;
     text-decoration-color: #D1EDFE;
     text-decoration-thickness: 4px;
+  transition: 0.5s 
 }
 #nav7:hover{
     color:black;
@@ -76,6 +82,7 @@ body{
     text-decoration: underline;
     text-decoration-color: #D1EDFE;
     text-decoration-thickness: 4px;
+  transition: 0.5s 
 }
 
 #judul{
@@ -138,6 +145,7 @@ body{
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 150px;
+    margin-bottom: 160px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap
@@ -165,8 +173,8 @@ body{
 #b4{
     margin-left: 20px;
     margin-right: 0px;
-    margin-top: 190px;
-    margin-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 170px;
 }
 #skill-title{
     font-family: 'Montserrat';
@@ -242,7 +250,7 @@ body{
 #b5{
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 120px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 #formal-title-container{
@@ -436,6 +444,107 @@ color: #16558F;
   margin-top:30px;
 }
 
+
+#b8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 110px;
+}
+#certi-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+    margin-top:0%;
+    margin-left:0%;
+    margin-bottom:80px;
+}
+.certi1{
+  width: 960px;
+  height: 593px;
+  border: 5px solid #61B0B7;
+  border-radius: 20px;
+}
+.certi1-top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.certi1-pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:20px;
+  margin-left:20px;
+  width: 640px;
+  height: 360px;
+  border: 5px solid #61B0B7;
+  border-radius: 20px;
+}
+.certif1-pic{
+  width: 580px;
+  height: 317px;
+  left: 62px;
+  top: 37px;
+}
+.certi1-desc{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align:center;
+  margin:0%;
+}
+.certi1-title{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 36px;
+  text-align:center;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+.certi-tag{
+  width: 190px;
+  height: 50px;
+  background: #D1EDFE;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  align-items: center;
+}
+.certi-tags{
+  margin-top:30px;
+  width: 190px;
+height: 50px;
+background: #D1EDFE;
+  color: #16558F;
+  text-decoration: none;
+}
+#certi-more{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 550;
+font-size: 25px;
+line-height: 36px;
+text-decoration-line: underline;
+color: #16558F;
+  margin-top:30px;
+}
+
+
 #contact-title{
     font-family: 'Montserrat';
     font-style: normal;
@@ -463,8 +572,8 @@ margin: 10px 0px 0px 0px;
     flex-wrap: wrap;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 130px;
-    margin-bottom: 200px;
+    margin-top: 80px;
+    margin-bottom: 90px;
 }
 #contact-container{
   text-align: center;
@@ -489,14 +598,19 @@ margin: 10px 0px 0px 0px;
 .contacts-pic{
   align-items: center;
 }
+#discord-pic{
+  height: 55px;
+  width: 55px;
+}
 #copyright-desc{
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   text-align: center;
   align-items: center;
+  margin: 0px;
 }
 
 .hiatus{
